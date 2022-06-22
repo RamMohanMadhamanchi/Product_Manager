@@ -1,0 +1,164 @@
+.loginContainer {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bigCircle {
+  position: absolute;
+  width: 14.75%;
+}
+
+.left {
+  top: 0;
+  left: 0;
+}
+
+.right {
+  right: 0;
+  bottom: 0;
+}
+
+.mainLogIn {
+  position: relative;
+  z-index: 1;
+  width: 81%;
+  height: 71.7%;
+  margin: auto;
+  background: #cef3ff;
+  opacity: 0.75;
+  box-shadow: 0px 4px 22px #b2dfff;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dotLeft {
+  position: absolute;
+  left: 2.86%;
+  bottom: 7.5%;
+  width: 12.72%;
+}
+
+.dotRight {
+  position: absolute;
+  width: 12.72%;
+  top: 5%;
+  right: 4.3%;
+}
+
+.signForm {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 25rem;
+  width: 20rem;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 18px;
+  align-items: center;
+  letter-spacing: 0.25px;
+  color: #7d8cc4;
+  justify-content: center;
+}
+
+.detail {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.25px;
+  justify-content: center;
+  color: #000000;
+  opacity: 0.6;
+}
+
+
+
+.btn {
+  background: #7d8cc4;
+  border-radius: 5px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.linkLogin {
+  width: 100%;
+  height: 18px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.25px;
+  color: #7d8cc4;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.signineye {
+  position: absolute;
+  right: 0.8rem;
+  bottom: 9.5rem;
+  cursor: pointer;
+}
+
+.signupeye {
+  position: absolute;
+  right: 0.8rem;
+  bottom: 7.5rem;
+  cursor: pointer;
+}
+
+.siteLogo {
+  width: 40px;
+}
+
+.input-group {
+  position: relative;
+}
+
+.inputauth {
+  width: 100%;
+  height: 35px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font:inherit;
+  outline: 2px solid #242329;
+}
+
+.input-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(10px, 10px);
+  transition: transform .25s;
+}
+.inputauth:focus+.input-label,
+.inputauth:valid+.input-label {
+  transform: translate(10px, -14px) scale(.8);
+  color: #d1c5fc;
+  padding-inline: 5px;
+  background-color: #242329;
+}
