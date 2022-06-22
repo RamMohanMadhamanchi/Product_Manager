@@ -5,13 +5,14 @@ import (
 	"backend/database"
 	"backend/middleware"
 	"backend/routes"
+	"log"
+
 	"github.com/gin-gonic/gin"
 	cors "github.com/rs/cors/wrapper/gin"
-	"log"
 )
 
 func main() {
-	port := "5000"
+	port := "8080"
 	app := AllRoutes.NewApplication(database.ProductData(database.Client, "Products"), database.UserData(database.Client, "Users"))
 	router := gin.Default()
 	router.Use(cors.AllowAll())
